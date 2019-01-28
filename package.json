@@ -1,0 +1,20 @@
+{
+  "name": "data-modeling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "docker run --rm -p 3306:3306 --name=mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_ROOT_HOST=% -d mysql/mysql-server:5.7"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mysql": "^2.16.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
+  }
+}
