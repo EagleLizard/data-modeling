@@ -11,6 +11,8 @@ const config = {
 
 const createScriptPaths = [
   `${__dirname}/schema/user.sql`,
+  `${__dirname}/schema/country.sql`,
+  `${__dirname}/schema/location.sql`,
 ];
 
 module.exports = {

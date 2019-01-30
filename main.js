@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 const routes = require('./routes');
 const db = require('./db');
+const initDb = require('./schema/init-db');
 
 const PORT = 3000;
 
@@ -12,6 +13,8 @@ main();
 
 async function main() {
   await db.init();
+  await initDb.initCountries();
+  await initDb.initLocations();
 
   app.use(bodyParser.json());
   routes.register(app);
